@@ -1,14 +1,20 @@
 <template>
   <nav class="nav-bar">
-    <div class="nav-bar__title-circle"></div>
-    <p class="nav-bar__title-words">PLAYLIVING IZU</p>
+    <a href="/"><div class="nav-bar__title-circle"></div></a>
+    <p class="nav-bar__title-words">
+      <a href="/">PLAYLIVING IZU</a>
+    </p>
     <ul class="nav-bar__list">
-      <li>Room</li>
-      <li>Experience</li>
-      <li>Food</li>
-      <li>Access</li>
-      <li>Reserve</li>
-      <li><i class="fa-brands fa-instagram"></i></li>
+      <li><a href="./dooreverywhere">Room</a></li>
+      <li><a href="/">Experience</a></li>
+      <li><a href="./dooreverywhere">Food</a></li>
+      <li><a href="/">Access</a></li>
+      <li><a href="./dooreverywhere">Reserve</a></li>
+      <li>
+        <a href="https://www.instagram.com/ael_iamness/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </li>
     </ul>
     <div class="nav-bar__empty"></div>
   </nav>
@@ -19,6 +25,17 @@ export default {};
 </script>
 
 <style>
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
 .nav-bar {
   width: 17vw;
   height: 100vh;
